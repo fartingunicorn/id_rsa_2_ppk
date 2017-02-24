@@ -3,7 +3,7 @@
 Convert id_rsa to id_rsa.ppk using puttygen.
 
 `docker pull madhub/idrsa2ppk`
-`docker run -rm -v $(pwd):/sshkey madhub/idrsa2ppk`
+`docker run --rm -v $(pwd):/sshkey madhub/idrsa2ppk`
 
 It takes a id_rsa mounted unter /sshkey and converts it to a Putty private key as id_rsa.ppk.
 
@@ -25,4 +25,4 @@ Create a Docker data volume with a sshkey.
 
 Extract the created id_rsa of the docker data volume into a windows host path.
 
-`docker run -rm --volumes-from keystore -v /c/tmp:/out -e ID_RSA_PATH=/root/.ssh -e OUT_PATH=/out madhub/idrsa2ppk `
+`docker run --rm --volumes-from keystore -v /c/tmp:/out -e ID_RSA_PATH=/root/.ssh -e OUT_PATH=/out madhub/idrsa2ppk`
