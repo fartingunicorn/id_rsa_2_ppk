@@ -9,7 +9,7 @@ It takes a id_rsa mounted unter /sshkey and converts it to a Putty private key a
 
 ## Environment variables
 |Name|default|
-|------------|
+|----|-------|
 |ID_RSA_PATH| /sshkey|
 |ID_RSA_FILENAME |id_rsa|
 |OUT_PATH |/sshkey|
