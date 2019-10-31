@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine:3.5
+FROM gliderlabs/alpine:3.9
 MAINTAINER Franz Mathauser <franz.mathauser@gmail.com>
 
 RUN apk-install putty
